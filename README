@@ -1,11 +1,29 @@
-dwm - dynamic window manager
-============================
-dwm is an extremely fast, small, and dynamic window manager for X.
+dwm - dynamic window manager ============================ dwm is an extremely fast, small, and dynamic window manager for X.
 This is MajorGamerJay's build for dwm with added patches.
 
 Requirements
 ------------
 In order to build dwm you need the Xlib header files.
+
+Keybindings & Shortcuts
+-----------------------
+For this build, the keybindings and shortcuts are different than the default ones
+
+<MODKEY> = Default MODKEY in config.def.h
+<browser> = Default web browser (*browsercmd[]) in config.def.h
+<terminal> = Default terminal (*terminalcmd[]) in config.def.h
+
+<MODKEY> + Shift + Return/Enter -> Spawn <terminal>
+<MODKEY> + Shift + M            -> Spawn browser
+<MODKEY> + Shift + N            -> Spawn ncmpcpp (music player)
+<MODKEY> + Shift + B            -> Spawn Htop (process viewer)
+<MODKEY> + Shift + C            -> Kill focused window
+<MODKEY> + Shift + Q            -> Quit DWM
+<MODKEY> + D                    -> Spawn dmenu
+<MODKEY> + J/K                  -> Focus on other windows
+<MODKEY> + H/L                  -> Resize window width
+<MODKEY> + B, N, M              -> Change window layout
+<MODKEY> + 1-9                  -> Change tag (Workspace)
 
 Patches
 -------
