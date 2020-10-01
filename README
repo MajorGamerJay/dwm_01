@@ -1,5 +1,7 @@
-dwm - dynamic window manager ============================ dwm is an extremely fast, small, and dynamic window manager for X.
-This is MajorGamerJay's build for dwm with added patches.
+dwm - dynamic window manager                                    https://dwm.suckless.org
+========================================================================================
+dwm is an extremely fast, small, and dynamic window manager for X. This is MajorGamerJay
+-'s build of dwm with patches and change of colors (gruvbox-dark themed).
 
 Requirements
 ------------
@@ -27,10 +29,12 @@ For this build, the keybindings and shortcuts are different than the default one
 
 Patches
 -------
-- activefullscreen
-- activetagindicator
-- systray
 
++--------------------------+
+|   - activefullscreen     |
+|   - activetagindicator   |
+|   - systray              |
++--------------------------+
 
 Installation
 ------------
@@ -40,14 +44,17 @@ the /usr/local namespace by default).
 Afterwards enter the following command to build and install dwm (if
 necessary as root):
 
-    make clean install
-
++---------------------------+
+|    make clean install     |
++---------------------------+
 
 Running dwm
 -----------
 Add the following line to your .xinitrc to start dwm using startx:
 
-    exec dwm
++---------------+
+|   exec dwm    |
++---------------+
 
 In order to connect dwm to a specific display, make sure that
 the DISPLAY environment variable is set correctly, e.g.:
@@ -59,12 +66,13 @@ the DISPLAY environment variable is set correctly, e.g.:
 In order to display status info in the bar, you can do something
 like this in your .xinitrc:
 
-    while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
-    do
-    	sleep 1
-    done &
-    exec dwm
-
++------------------------------------------------------------+
+|   while xsetroot -name "`date` `uptime | sed 's/.*,//'`"   |
+|   do                                                       |
+|   	sleep 1                                              |
+|   done &                                                   |
+|   exec dwm                                                 |
++------------------------------------------------------------+
 
 Configuration
 -------------
