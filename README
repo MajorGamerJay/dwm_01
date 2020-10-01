@@ -5,13 +5,15 @@ dwm is an extremely fast, small, and dynamic window manager for X. This is Major
 
 Requirements
 ------------
-In order to build dwm you need the Xlib header files.
+- In order to build dwm you need the Xlib header files.
+- Using this version of dwm would require you to have Ubuntu Mono fonts, please add them in
+  your fonts or change in config.def.h
 
 Keybindings & Shortcuts
 -----------------------
 For this build, the keybindings and shortcuts are different than the default ones
 
-<MODKEY> = Default MODKEY in config.def.h
+<MODKEY> = Default MODKEY (Mod4) in config.def.h
 <browser> = Default web browser (*browsercmd[]) in config.def.h
 <terminal> = Default terminal (*terminalcmd[]) in config.def.h
 
@@ -29,7 +31,6 @@ For this build, the keybindings and shortcuts are different than the default one
 
 Patches
 -------
-
 +--------------------------+
 |   - activefullscreen     |
 |   - activetagindicator   |
@@ -59,7 +60,9 @@ Add the following line to your .xinitrc to start dwm using startx:
 In order to connect dwm to a specific display, make sure that
 the DISPLAY environment variable is set correctly, e.g.:
 
-    DISPLAY=foo.bar:1 exec dwm
++----------------------------+
+| DISPLAY=foo.bar:1 exec dwm |
++----------------------------+
 
 (This will start dwm on display :1 of the host foo.bar.)
 
@@ -78,3 +81,7 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
+
+License
+-------
+This program is created under MIT/X Consortium License. Please check LICENSE for more details.
