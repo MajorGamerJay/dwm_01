@@ -28,6 +28,7 @@ For this build, the keybindings and shortcuts are different than the default one
 <MODKEY> + H/L                  -> Resize window width
 <MODKEY> + B, N, M              -> Change window layout
 <MODKEY> + 1-9                  -> Change tag (Workspace)
+!! gaps related keybindings will be added later.
 
 Patches
 -------
@@ -35,6 +36,7 @@ Patches
 |   - activefullscreen     |
 |   - activetagindicator   |
 |   - systray              |
+|   - vanitygaps
 +--------------------------+
 
 Installation
