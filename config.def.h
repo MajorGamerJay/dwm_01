@@ -22,11 +22,12 @@ static const char col_gray3[]       = "#000000";
 static const char col_gray4[]       = "#ebdbb2";
 static const char col_cyan[]        = "#282828";
 static const char col_selbord[]     = "#770000";
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray4, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_selbord  },
+#include "/home/majorgamerjay/.cache/wal/colors-wal-dwm.h"
+/* static const char *colors[][3]      = {
+ *	[SchemeNorm] = { col_gray4, col_gray1, col_gray2 },
+ *	[SchemeSel]  = { col_gray4, col_cyan,  col_selbord  },
 };
+ */
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -67,10 +68,10 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "urxvt", NULL };
 static const char *browsercmd[] = { "firefox-bin", NULL };
-static const char *htopcmd[] = { "st", "-t", "Htop Process Viewer", "-e", "htop", NULL };
-static const char *ncmpcppcmd[] = { "st", "-t", "ncmpcpp music player", "-e", "ncmpcpp", NULL };
+static const char *htopcmd[] = { "urxvt", "-t", "Htop Process Viewer", "-e", "htop", NULL };
+static const char *ncmpcppcmd[] = { "urxvt", "-t", "ncmpcpp music player", "-e", "ncmpcpp", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
